@@ -1,0 +1,101 @@
+$card_custom_height: 150px;
+$card_custom_width: 300px;
+
+$height_img_base: 25px;
+$padding_base: 20px;
+
+.programDay {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card-custom {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    width: 35%;
+    height: 150px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    margin: 20px;
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    table {
+      width: 100%;
+      box-sizing: border-box;
+
+      img {
+        height: $height_img_base;
+      }
+
+      height: 100%;
+      width: 100%;
+
+      .td-custom {
+        width: 100px;
+      }
+
+      .td-title {
+        color: black;
+        font-size: 20px;
+        box-sizing: border-box;
+      }
+      .td-subtitle {
+        color: #72838d;
+        font-size: 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .programDay {
+    margin-bottom: 25px;
+
+    &__title {
+      margin-top: 4%;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .card-custom {
+      width: 100%;
+      height: auto;
+
+      table {
+        .td-custom {
+          width: auto;
+        }
+        .td-title {
+          padding: 0 10px 0 10px;
+          font-size: 20px;
+          text-align: left;
+        }
+        .td-subtitle {
+          padding: 0 10px 0 10px;
+          font-size: 18px;
+          word-wrap: break-word;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

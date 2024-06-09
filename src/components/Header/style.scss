@@ -1,0 +1,89 @@
+@import "./src/styles/const.scss";
+
+.header {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.2)),
+    url("../../styles/bg/after/7.jpg") no-repeat center;
+  background-size: cover;
+  background-color:rgba(0, 0, 0, .5);
+
+  &__title {
+    color: black;
+    font-size: 100px;
+    text-align: center;
+    width: 65%;
+    padding-right: 20%;
+
+    &__left {
+      text-align: left;
+      line-height: 1;
+    }
+
+    &__right {
+      text-align: right;
+      line-height: 1;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+
+    color: black;
+    margin-top: 35px;
+    padding: 20px;
+
+    border-radius: $radius-button;
+    border: 1px solid black;
+
+    transition: 0.5s all;
+
+    &:hover {
+      background-color: $global-color-button;
+      color: $global-color-button-hover;
+      font-width: 600;
+      transition: 0.5s all;
+    }
+  }
+
+  &__subtitle {
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+  }
+}
+
+@media (orientation: portrait) {
+  .header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+
+    &__title {
+      font-size: 50px;
+
+      width: 100%;
+      padding-right: 0;
+
+      &__left {
+        text-align: right;
+        line-height: 2;
+      }
+
+      &__right {
+        text-align: left;
+        line-height: 2;
+      }
+    }
+    &__subtitle {
+      font-size: 12px;
+    }
+  }
+}

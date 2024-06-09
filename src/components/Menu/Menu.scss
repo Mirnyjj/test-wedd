@@ -1,0 +1,60 @@
+@import "./src/styles/const.scss";
+
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  z-index: 10;
+
+  padding: 0 5%;
+  box-sizing: border-box;
+
+  transition: all 0.5s;
+
+  &__button {
+    cursor: pointer;
+
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+
+    border-radius: $radius-button;
+
+    color: black;
+
+    transition: 0.5s all;
+
+    &:hover {
+      background-color: $global-color-button;
+      color: $global-color-button-hover;
+      font-width: 600;
+      transition: 0.5s all;
+    }
+  }
+
+  &-scroll {
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: all 0.5s;
+
+    .menu__button {
+      margin: 0px;
+
+      border-radius: 0px;
+      transition: all 0.5s;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .menu {
+    display: none;
+  }
+}

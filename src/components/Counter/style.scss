@@ -1,0 +1,65 @@
+@import "./src/styles/const.scss";
+
+.counter {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  height: 100vh;
+
+  background: 
+  linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2)),
+    url("../../styles/bg/after/5.jpg") no-repeat center;
+  background-position: 50% 100%;
+  background-size: cover;
+
+  &__title {
+    position: absolute;
+    top: 3%;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .flip-clock-wrapper {
+    .title {
+      display: none;
+    }
+  }
+
+  #clock {
+    width: auto !important;
+    zoom: 130%;
+    -moz-transform: scale(0.5);
+
+    // Цвет таймера
+    .inn {
+      background-color: $global-color-button;
+    }
+  }
+}
+
+/** Цвет карточек таймера */
+/** Цвет шрифта таймера */
+@media (orientation: portrait) {
+  .counter {
+    background-position: 50% 100%;
+    align-items: center;
+
+    .flip-clock-wrapper ul li a div div.inn {
+      font-size: 40% !important;
+    }
+
+    &__title {
+      top: 10%;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    #clock {
+      zoom: 45%;
+      -moz-transform: scale(0.5);
+    }
+  }
+}
