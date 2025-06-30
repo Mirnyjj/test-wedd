@@ -1,9 +1,8 @@
 {
-  "name": "my-wedding",
+  "name": "wedding",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Mirnyjj.github.io/wedding",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

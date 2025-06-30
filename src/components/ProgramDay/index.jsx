@@ -31,13 +31,13 @@ export const ProgramDay = () => {
       <div className="programDay__title">Тайминг</div>
       <Card
         img={point}
-        title="15:30 - Cбор гостей/фуршет "
+        title="11:30 - Церемония бракосочетания в ЗАГС "
         // subtitle="ул. Коммунистическая, 10"
       />
-      <Card img={point} title="16:00 - Церемония бракосочетания" subtitle="" />
+      <Card img={point} title="15:30 - Сбор гостей на банкет" subtitle="" />
       <Card
         img={point}
-        title="17:00 - Свадебный банкет"
+        title="16:00 - Свадебный банкет"
         // subtitle="ул. Салаирский тракт, 10 км, стр. 1"
       />
     </div>

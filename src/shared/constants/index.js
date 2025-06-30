@@ -1,4 +1,4 @@
-export const globalDate = "14 июля 2024 года";
+export const globalDate = "15 августа 2025 года";
 
 export const guestList = [
   "Мама и Папа",
@@ -27,5 +27,5 @@ export const guestList = [
   "Маша",
   "Юля",
   "Александр",
-  "Артем"
+  "Артем",
 ];

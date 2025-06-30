@@ -5,66 +5,81 @@ const initialState = {
   currentGuest: {
     name: "Гость",
     url: "guest",
-    appeal: "Дорогой"
+    appeal: "Дорогой",
   },
   noneGuest: true,
   loading: false,
   error: "",
-  date: "14.07.2024",
+  date: "15.08.2025",
   family: {
-    man: "Максим",
-    woman: "Ксения",
-    title: "wedding"
+    man: "Илья",
+    woman: "Елена",
+    title: "wedding",
   },
   users: [
     {
       name: "Мама и Папа",
       url: "mama-papa",
       appeal: "Дорогие",
-      x: 4
+      x: 4,
     },
     { name: "Сергей и Анна", url: "sergey-anna", appeal: "Дорогие", x: 1 },
     {
       name: "крестная, дядя Андрей и Арина",
       url: "krestnaya",
       appeal: "Дорогие",
-      x: 4
+      x: 4,
     },
     {
       name: "Денис и Анастасия",
       url: "denis-nastya",
       appeal: "Дорогие",
-      x: 4
+      x: 4,
     },
     {
       name: "Игорь и Анна",
       url: "igor-any",
       appeal: "Дорогие",
-      x: 4
+      x: 4,
     },
     { name: "Луиза и Сергей", url: "luiza-sergey", appeal: "Дорогие", x: 2 },
-    { name: "дядя Сергей, тетя Лена, Максим, Александр и Ирина", url: "zhelniny", appeal: "Дорогие", x: 2 },
+    {
+      name: "дядя Сергей, тетя Лена, Максим, Александр и Ирина",
+      url: "zhelniny",
+      appeal: "Дорогие",
+      x: 2,
+    },
     { name: "дядя Витя и Стас", url: "tihanovy", appeal: "Дорогие", x: 1 },
     { name: "Василий и Екатерина", url: "vasy-katy", appeal: "Дорогие", x: 1 },
     { name: "Эдуард и Индира", url: "edyard-indira", appeal: "Дорогие", x: 1 },
     { name: "Ангелина", url: "angelina", appeal: "Дорогая", x: 1 },
     { name: "Дмитрий и Оксана", url: "dima-oksana", appeal: "Дорогие", x: 4 },
-    { name: "Александр и Анастасия", url: "sasha-nastya", appeal: "Дорогие", x: 3 },
+    {
+      name: "Александр и Анастасия",
+      url: "sasha-nastya",
+      appeal: "Дорогие",
+      x: 3,
+    },
     { name: "Александр и Анна", url: "sasha-any", appeal: "Дорогие", x: 4 },
     { name: "Никита", url: "nikita", appeal: "Дорогой", x: 4 },
     {
       name: "дядя Андрей",
       url: "dyda-andrei",
       appeal: "Дорогой",
-      x: 4
+      x: 4,
     },
     { name: "Екатерина и Валерия", url: "katy-lera", appeal: "Дорогие", x: 4 },
-    { name: "Елена, Виктор, Егор, Мария и Иван", url: "lena-vitya", appeal: "Дорогие", x: 4 },
+    {
+      name: "Елена, Виктор, Егор, Мария и Иван",
+      url: "lena-vitya",
+      appeal: "Дорогие",
+      x: 4,
+    },
     {
       name: "Анастасия и Денис",
       url: "nastya-i-denis",
       appeal: "Дорогие",
-      x: 4
+      x: 4,
     },
     { name: "Андрей и Марина", url: "andrey-marina", appeal: "Дорогие", x: 1 },
     { name: "Ксения", url: "ksysha", appeal: "Дорогая", x: 4 },
@@ -74,19 +89,19 @@ const initialState = {
       name: "Татьяна",
       url: "tanya",
       appeal: "Дорогая",
-      x: 4
+      x: 4,
     },
     {
       name: "Мария",
       url: "masha",
       appeal: "Дорогая",
-      x: 4
+      x: 4,
     },
     {
       name: "Юлия и Николай",
       url: "yla",
       appeal: "Дорогие",
-      x: 3
+      x: 3,
     },
     { name: "Александр", url: "aleksandr", appeal: "Дорогой", x: 1 },
     { name: "Артем", url: "artem", appeal: "Дорогой", x: 3 },
@@ -94,7 +109,7 @@ const initialState = {
   dressCode: {
     title: "Цветовая гамма",
     content:
-      "Мы старались сделать праздник красивым и будем рады, если в своих нарядах Вы поддержите цветовую гамму нашей свадьбы."
+      "На нашей свадьбе ограничений по дресс-коду нет, но мы будем рады, если Вы выберите торжественную форму одежды для нашего праздника!",
   },
   // contacts: {
   //   title: "Организатор",
@@ -110,78 +125,86 @@ const initialState = {
   //     "Всех гостей будет ожидать трансфер к месту проведения церемонии бракосочетания " +
   //     "в 14:20 по адресу: ул. Коммунистическая, 10. "
   // },
+
   address: [
     {
-      title: "Адрес проведения мероприятия",
+      title: "Адрес проведения церемонии бракосочетания",
       content:
-        " ул. Самарская, 110, Самара  (отель 'Лотте') ",
+        "Церемония бракосочетания: Самарская область, Волжский район, п. Придорожный, мкр Южный город, ул. Николаевский проспект, д.2",
       urlMap:
-        "https://yandex.ru/map-widget/v1/?um=constructor%3A19d33af6a6a81982f4d7678d9025d76bf0e6f57deea335f8e11039603b3fb653&amp;source=constructor",
-      urlCar:
-        "https://yandex.ru/maps/?ll=49.245812%2C53.758177&mode=routes&rtext=~53.192761%2C50.104913&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D46324522204&z=9.21",
-      id: "guests"
-    }
+        "https://yandex.ru/map-widget/v1/?um=constructor%3A1acbd37819e09096da6c645a1d55952c31ccdad459de4dd66dba9b2f947ddc98&amp;source=constructor",
+      urlCar: "https://yandex.ru/maps/-/CHgdEGo3",
+      id: "guests",
+    },
+    {
+      title: "Адрес проведения банкета",
+      content: "Самара, Прогонный проезд 6",
+      urlMap:
+        "https://yandex.ru/map-widget/v1/?um=constructor%3A2db052ea7af78d5536259b65025e3a54ded6b79f6db5dad64bae98eddad34a0e&amp;source=constructor",
+      urlCar: "https://yandex.ru/maps/-/CHgdEXoA",
+      id: "guests",
+    },
   ],
   appeal: {
     title: "Обращение к гостям",
     content:
-      "Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких и друзей. С большим удовольствием приглашаем Вас на знаменательный праздник - нашу свадьбу!",
-      // "создавали и разделяли самые яркие и незабываемые моменты в нашей жизни, " +
-      // "приходили к нам на помощь, наполняли нашу жизнь самыми искренними и тёплыми эмоциями. " +
-      // "Нам было бы приятно и радостно, если бы Вы стали свидетелями столь важного мероприятия и разделили с нами наше счастье! " +
-      // "Позвольте пригласить Вас на самое главное торжество всей нашей жизни, которое состоится 14 июля 2024 года",
-    other: "Дорогие и любимые наши гости!"
+      "Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких и друзей. С большим удовольствием приглашаем Вас разделить с нами этот праздник - нашу свадьбу!",
+    // "создавали и разделяли самые яркие и незабываемые моменты в нашей жизни, " +
+    // "приходили к нам на помощь, наполняли нашу жизнь самыми искренними и тёплыми эмоциями. " +
+    // "Нам было бы приятно и радостно, если бы Вы стали свидетелями столь важного мероприятия и разделили с нами наше счастье! " +
+    // "Позвольте пригласить Вас на самое главное торжество всей нашей жизни, которое состоится 14 июля 2024 года",
+    other: "Дорогие и любимые наши гости!",
   },
   program: [
     {
+      time: "11:30",
+      title: "Церемония бракосочетания в ЗАГС",
+      street: "",
+    },
+    {
       time: "15:30",
       title: "Сбор гостей",
-      street: ""
+      street: "",
     },
     {
       time: "16:00",
-      title: "Церемония бракосочетания",
-      street: ""
-    },
-    {
-      time: "16:30",
       title: "Праздничный банкет",
-      street: ""
-    }
+      street: "",
+    },
   ],
   menu: [
     {
       name: "header",
-      title: "Главная"
+      title: "Главная",
     },
     {
       name: "appeal",
-      title: "Пригласительный"
+      title: "Пригласительный",
     },
     {
       name: "counter",
-      title: "Дней до свадьбы"
+      title: "Дней до свадьбы",
     },
     {
       name: "feedback",
-      title: "Анкета"
+      title: "Анкета",
     },
     {
       name: "programDay",
-      title: "Тайминг"
+      title: "Тайминг",
     },
     {
       name: "photo",
-      title: "Фото"
+      title: "Фото",
     },
     {
       name: "gamma",
-      title: "Дресс-код"
+      title: "Дресс-код",
     },
     {
       name: "holiday",
-      title: "Место проведения"
-    }
+      title: "Место проведения",
+    },
   ],
   feedbackContent: {
     questions: [
@@ -190,7 +213,7 @@ const initialState = {
         name: "eat",
         type: "checkbox",
         necessarily: false,
-        answers: ["Свинина", "Птица", "Вегетарианские"]
+        answers: ["Свинина", "Птица", "Вегетарианские"],
       },
       {
         title: "Какие напитки Вы предпочитаете?",
@@ -205,39 +228,41 @@ const initialState = {
           "Безалкогольные",
           // "Предпочтения в напитках каждого гостя"
         ],
-        other: "Предпочтения в напитках каждого гостя"
+        other: "Предпочтения в напитках каждого гостя",
       },
       {
-        title: "Необходим ли Вам трансфер из города Ульяновск и обратно в день торжества?",
+        title:
+          "Необходим ли Вам трансфер из города Ульяновск и обратно в день торжества?",
         name: "transfer",
         type: "radio",
         necessarily: true,
-        answers: ["Да", "Нет"]
+        answers: ["Да", "Нет"],
       },
       {
-        title: "Планируете ли Вы присутствовать на втором дне нашего торжества, который будет проходить в городе Ульяновск?",
+        title:
+          "Планируете ли Вы присутствовать на втором дне нашего торжества, который будет проходить в городе Ульяновск?",
         name: "secondDay",
         type: "radio",
         necessarily: true,
-        answers: ["Да", "Нет"]
-      }
-    ]
-  }
+        answers: ["Да", "Нет"],
+      },
+    ],
+  },
 };
 
 const setGuest = (state, action) => ({
   ...state,
-  currentGuest: action.payload
+  currentGuest: action.payload,
 });
 
 const setMenu = (state, action) => ({
   ...state,
-  menu: [...action.payload]
+  menu: [...action.payload],
 });
 
 const reducerMap = {
   [weddingActions.SET_GUEST]: setGuest,
-  [weddingActions.SET_MENU]: setMenu
+  [weddingActions.SET_MENU]: setMenu,
 };
 
 export const weddingReducers = handleActions(reducerMap, initialState);

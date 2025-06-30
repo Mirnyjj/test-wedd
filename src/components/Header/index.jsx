@@ -15,8 +15,8 @@ export const Header = () => {
       <div className="header container" id="header">
         <div className="header__title">
           <div className="title title-class-first font-cursive">
-            <div className="header__title__left">{family.woman}</div>&
-            <div className="header__title__right">{family.man}</div>
+            <div className="header__title__left">{family.man}</div>&
+            <div className="header__title__right">{family.woman}</div>
           </div>
         </div>
         <div

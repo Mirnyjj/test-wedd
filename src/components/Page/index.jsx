@@ -18,35 +18,35 @@ import "./style.scss";
 const initialMenuGuest = [
   {
     name: "header",
-    title: "Главная"
+    title: "Главная",
   },
   {
     name: "appeal",
-    title: "Пригласительный"
+    title: "Пригласительный",
   },
   {
     name: "counter",
-    title: "Дней до свадьбы"
+    title: "Дней до свадьбы",
   },
   {
     name: "feedback",
-    title: "Анкета"
+    title: "Анкета",
   },
   {
     name: "programDay",
-    title: "Тайминг"
+    title: "Тайминг",
   },
   {
     name: "photo",
-    title: "Фото"
+    title: "Фото",
   },
   {
     name: "gamma",
-    title: "Дресс-код"
+    title: "Дресс-код",
   },
   {
     name: "guests",
-    title: "Локация"
+    title: "Локация",
   },
   // {
   //   name: "holiday",
@@ -60,27 +60,27 @@ const initialMenuGuest = [
 const initialMenuNoneGuest = [
   {
     name: "header",
-    title: "Главная"
+    title: "Главная",
   },
   {
     name: "appeal",
-    title: "Пригласительный"
+    title: "Пригласительный",
   },
   {
     name: "counter",
-    title: "Дней до свадьбы"
+    title: "Дней до свадьбы",
   },
   {
     name: "programDay",
-    title: "Тайминг"
+    title: "Тайминг",
   },
   {
     name: "photo",
-    title: "Фото"
+    title: "Фото",
   },
   {
     name: "gamma",
-    title: "Дресс-код"
+    title: "Дресс-код",
   },
   // {
   //   name: "guests",
@@ -88,7 +88,7 @@ const initialMenuNoneGuest = [
   // },
   {
     name: "holiday",
-    title: "Место проведения"
+    title: "Место проведения",
   },
   // {
   //   name: "footer",
@@ -96,16 +96,16 @@ const initialMenuNoneGuest = [
   // }
 ];
 
-const Details = () => {
-  return (
-    <div className="details">
-      <div className="details__title">Детали</div>
-      <div className="details__content">
-      Просим Вас не дарить нам цветы, так как наша любопытная кошка не позволит насладиться их красотой в полной мере. А вот до бутылочки вина из нашей семейной винотеки она вряд ли доберется!
-      </div>
-    </div>
-  )
-}
+// const Details = () => {
+//   return (
+//     <div className="details">
+//       <div className="details__title">Детали</div>
+//       <div className="details__content">
+//       Просим Вас не дарить нам цветы, так как наша любопытная кошка не позволит насладиться их красотой в полной мере. А вот до бутылочки вина из нашей семейной винотеки она вряд ли доберется!
+//       </div>
+//     </div>
+//   )
+// }
 
 export const Page = () => {
   const { users, address, currentGuest } = useSelector(getWedding);
@@ -133,11 +133,11 @@ export const Page = () => {
       <CarouselBase />
       <Gamma />
       {currentGuest.name !== "Гость" && <FeedbackFull />}
-      <Details />
+      {/* <Details /> */}
       {address.map((item, key) => (
         <Map address={item} key={key} />
       ))}
       <Burger />
     </div>
-  )
+  );
 };
