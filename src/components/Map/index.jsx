@@ -3,7 +3,7 @@ import "./style.scss";
 export const Map = ({ address }) => {
   const { title, content, urlMap, urlCar, id } = address;
   return (
-    <div className="map container" id="guests">
+    <div className="map container" id="holiday">
       <div className="map__title">{title}</div>
       <br />
       <div className="map__content">

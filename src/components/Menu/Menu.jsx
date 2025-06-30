@@ -5,17 +5,19 @@ import smoothscroll from "smoothscroll-polyfill";
 
 import "./Menu.scss";
 
-export const handleScrollSmooth = name => {
+export const handleScrollSmooth = (name) => {
   smoothscroll.polyfill();
+  console.log(name);
   document.getElementById(name).scrollIntoView({ behavior: "smooth" });
 };
 
 export const Menu = () => {
   const { menu, currentGuest } = useSelector(getWedding);
+  console.log(menu);
   const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
-    const callback = event => {
+    const callback = (event) => {
       const scrollTop = event.target.scrollingElement.scrollTop;
 
       if (130 < scrollTop) {

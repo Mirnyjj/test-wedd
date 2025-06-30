@@ -11,7 +11,7 @@ export const Counter = () => {
   return (
     <div className="counter container" id="counter">
       <span className="counter__title container font-cursive">
-        Дней до свадьбы - {formatTime()}
+        Дней до свадьбы {formatTime()}
       </span>
       <div id="clock" />
     </div>

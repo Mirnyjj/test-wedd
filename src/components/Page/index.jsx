@@ -48,14 +48,10 @@ const initialMenuGuest = [
     name: "guests",
     title: "Локация",
   },
-  // {
-  //   name: "holiday",
-  //   title: "Место проведения"
-  // },
-  // {
-  //   name: "footer",
-  //   title: "Контакты"
-  // }
+  {
+    name: "holiday",
+    title: "Место проведения",
+  },
 ];
 const initialMenuNoneGuest = [
   {
@@ -82,10 +78,6 @@ const initialMenuNoneGuest = [
     name: "gamma",
     title: "Дресс-код",
   },
-  // {
-  //   name: "guests",
-  //   title: "Локация"
-  // },
   {
     name: "holiday",
     title: "Место проведения",
