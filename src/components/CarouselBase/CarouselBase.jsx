@@ -1,8 +1,8 @@
 import { Carousel } from "antd";
 
 import photo1 from "../../styles/bg/after/10.jpg";
-import photo2 from "../../styles/bg/after/5.jpg";
-import photo3 from "../../styles/bg/after/7.jpg";
+import photo2 from "../../styles/bg/after/2.jpg";
+import photo3 from "../../styles/bg/after/3.jpg";
 
 import "./CarouselBase.scss";
 

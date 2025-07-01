@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { getWedding } from "../../store/selectors/wedding.selectors";
 import { handleScrollSmooth } from "../Menu/Menu";
-
+import photo1 from "../../styles/bg/after/1.png";
 import "./style.scss";
 import { globalDate } from "../../shared/constants";
 
@@ -20,7 +20,7 @@ export const AppealContent = ({}) => {
               className="font-date font-cursive"
               onClick={() => handleScrollSmooth("counter")}
             >
-              {globalDate}
+              <img src={photo1} />
             </strong>
           </div>
         );
@@ -68,16 +68,17 @@ export const AppealContent = ({}) => {
 
       default:
         return (
-          <div className="appeal__content">
-            {appeal?.content}
-            <br />
-            <strong
-              className="font-date font-cursive"
-              onClick={() => handleScrollSmooth("counter")}
-            >
-              {globalDate}
-            </strong>
-          </div>
+          <>
+            <div className="appeal__content">
+              {appeal?.content}
+              <br />
+              <strong
+                className="font-date font-cursive"
+                onClick={() => handleScrollSmooth("counter")}
+              ></strong>
+            </div>
+            <img src={photo1} />
+          </>
         );
     }
   }, [currentGuest, appeal?.content]);

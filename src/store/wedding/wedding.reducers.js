@@ -202,6 +202,10 @@ const initialState = {
       title: "Дресс-код",
     },
     {
+      name: "details",
+      title: "Детали",
+    },
+    {
       name: "holiday",
       title: "Место проведения",
     },

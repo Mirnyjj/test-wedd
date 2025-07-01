@@ -14,6 +14,7 @@ import { weddingActions } from "../../store/wedding/wedding.actions";
 import { CarouselBase } from "../CarouselBase/CarouselBase";
 import { Burger } from "../../shared/components/Burger";
 import "./style.scss";
+import { Details } from "../Details";
 
 const initialMenuGuest = [
   {
@@ -79,6 +80,10 @@ const initialMenuNoneGuest = [
     title: "Дресс-код",
   },
   {
+    name: "details",
+    title: "Детали",
+  },
+  {
     name: "holiday",
     title: "Место проведения",
   },
@@ -87,17 +92,6 @@ const initialMenuNoneGuest = [
   //   title: "Контакты"
   // }
 ];
-
-// const Details = () => {
-//   return (
-//     <div className="details">
-//       <div className="details__title">Детали</div>
-//       <div className="details__content">
-//       Просим Вас не дарить нам цветы, так как наша любопытная кошка не позволит насладиться их красотой в полной мере. А вот до бутылочки вина из нашей семейной винотеки она вряд ли доберется!
-//       </div>
-//     </div>
-//   )
-// }
 
 export const Page = () => {
   const { users, address, currentGuest } = useSelector(getWedding);
@@ -125,7 +119,7 @@ export const Page = () => {
       <CarouselBase />
       <Gamma />
       {currentGuest.name !== "Гость" && <FeedbackFull />}
-      {/* <Details /> */}
+      <Details />
       {address.map((item, key) => (
         <Map address={item} key={key} />
       ))}
