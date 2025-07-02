@@ -51,7 +51,7 @@ export const Details = () => {
     <div className="details" id="details">
       <div className="details__title">Детали</div>
       <div className="details__content">
-        Мы догадываемся, что после получения приглашения у вас может появится
+        Мы догадываемся, что после получения приглашения у вас может появиться
         ряд вопросов
       </div>
       {details.map((item, index) => (
